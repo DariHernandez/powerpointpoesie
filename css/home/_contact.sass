@@ -1,0 +1,201 @@
+.contact
+    
+    .cards
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        .card
+            border: 2px solid $color_c
+            width: 30%
+            height: 300px
+            display: flex
+            align-items: center
+            justify-content: center
+
+            a, p
+                font-size: 35px 
+                transform: scaleX(1)
+                text-align: center
+
+            &.name
+                border-right: none
+                border-bottom: none
+
+                p
+                    font-size: 45px
+                    font-weight: bold
+
+            &.phone
+                border-top: none
+                border-left: none
+
+            &.email
+                border-top: none
+                border-right: none
+
+    .wrapper-button-decorator
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        width: 100%
+
+        button
+            border: none
+            background-color: $color_d
+            display: flex
+            align-items: center
+            justify-content: space-evenly
+            padding: 10px
+            margin-top: 20px
+            transition-duration: 0.5s
+            width: 25%
+            
+            p
+                transform: scaleX(1)
+                letter-spacing: 0
+                color: $color_a
+                font-size: 20px
+                transition-duration: 0.5s
+
+            svg
+                fill: $color_a
+                width: 30px
+                height: auto
+                margin-left: 20px
+                transition-duration: 0.5s
+
+            &:hover
+                opacity: 0.8
+
+                svg
+                    width: 25px
+                    transform: rotateZ(180deg)
+
+            &.active
+                width: 50%
+                background-color: $color_b
+                border: 2px solid $color_c
+
+                p
+                    color: $color_c
+                    font-weight: bold
+
+                svg
+                    margin-left: 0
+
+        .wrapper-decorator
+            width: 30%
+            height: 150px
+            overflow: hidden
+
+            .decorator
+                width: 150%
+                height: 100%
+                transform: rotateZ(5deg)
+                margin-top: -50px
+
+    .wrapper-menu
+
+        overflow: hidden
+        height: auto
+        display: block
+        width: calc(50% - 20px)
+        text-align: left
+        font-size: 25px
+        background-color: $color_b
+        color: $color_c
+        padding: 30px 15px
+        padding-right: 0
+        border: 2px solid $color_c
+        border-top: 0
+        transition-duration: 0.5s
+        margin-top: -45px
+
+        &.collapsed
+            height: 0
+            width: 0
+            padding: 0
+            border: none
+            opacity: 0
+
+        &.middle-collapsed
+            width: 0
+            opacity: 0
+        
+        ul
+            font-weight: bold
+            margin: 0
+            padding: 0
+
+            li
+                list-style: none
+                letter-spacing: 0
+                line-height: 40px
+                margin: 0
+                padding: 0
+
+                &.dark
+                    color: $color_a
+
+                a
+                    color: $color_d
+                    text-decoration: underline
+                    margin: 0
+                    padding: 0
+        
+    @media screen and (max-width: 1200px)
+        .cards
+            a, p
+                letter-spacing: 0
+
+        .wrapper-button-decorator
+            justify-content: center
+
+            .wrapper-decorator
+                display: none
+            
+            button
+                width: 50%
+
+                &.active
+                    width: 80%
+            
+        .wrapper-menu
+            width: calc(80% - 20px)
+            margin-top: 0
+            margin: 0 auto
+
+    @media screen and (max-width: 750px)
+
+        .wrapper-button-decorator
+            
+            button
+                width: 80%
+
+                &.active
+                    width: 100%
+            
+        .wrapper-menu
+            width: calc(100% - 20px)
+
+
+    @media screen and (max-width: 700px)
+        .cards
+            flex-direction: column
+            
+            .card
+                width: 80%
+                height: auto
+                margin-bottom: 20px
+                padding: 50px auto
+                border: none
+
+                br
+                    display: none
+    
+    @media screen and (max-width: 550px)
+        .wrapper-menu
+            ul
+                li
+                    margin-bottom: 15px

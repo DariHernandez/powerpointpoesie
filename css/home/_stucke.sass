@@ -1,0 +1,90 @@
+.stucke
+
+    h2
+        font-size: 130px
+        letter-spacing: 3rem
+        margin-bottom: 0
+
+    p.subtitle
+        color: $color_c
+        font-size: 40px
+        letter-spacing: 0
+        font-style: italic
+        text-align: right
+        width: 1100px
+        transform: scaleX(1)
+        margin: 80px 0
+
+    .cards
+
+        .card
+            font-size: 35px
+            width: 40%
+            border: 2px solid $color_c
+            border-right: none
+            border-left: none
+            padding: 20px 0
+            line-height: 70px
+            background: rgb(255,255,255)
+            background: -moz-linear-gradient(10deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 26%, rgba($color_b, 0.25) 28%, rgba(186,47,54,0) 60%)
+            background: -webkit-linear-gradient(10deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 26%, rgba($color_b, 0.25) 28%, rgba(186,47,54,0) 60%)
+            background: linear-gradient(10deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 26%, rgba($color_b, 0.25) 28%, rgba(186,47,54,0) 60%)
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr=$color_b,GradientType=1)
+            
+            &.bottom
+                display: block
+                margin: 0 auto
+
+        .top
+            display: flex
+            align-items: flex-end
+            justify-content: center
+
+
+            .decorator
+                width: 200px
+                height: 80px
+
+    @media screen and (max-width: 1250px)
+        h2, p.subtitle
+            width: 100%
+            letter-spacing: 0
+
+        .cards
+            .card
+                letter-spacing: 0
+
+    @media screen and (max-width: 750px)
+        p.subtitle
+            text-align: center
+
+        .cards
+            
+            .card
+                margin-bottom: 50px
+                width: 80%
+
+            .top
+                flex-direction: column
+                align-items: center
+
+                .decorator
+                    display: none
+        
+            .wrapper-dots
+                display: none
+
+    @media screen and (max-width: 500px)
+        h2
+            font-size: 120px
+
+        p.subtitle
+            font-size: 30px
+
+    @media screen and (max-width: 380px)
+        h2
+            font-size: 110px
+
+        p.subtitle
+            font-size: 20px
+            

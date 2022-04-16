@@ -1,0 +1,74 @@
+.sub-hero
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    margin-top: 70px
+
+    &.im
+        .content
+            background-image: url("../imgs/photo-im.png")
+            background-size: auto 200%
+            background-position-x: 50%
+            background-position-y: 40%
+            background-color: rgba($color_b, 0.5)
+    
+    &.die
+        .content
+            background-image: url("../imgs/photo-wall.png")
+            background-size: auto 200%
+            background-position-x: 50%
+            background-position-y: 40%
+            background-color: rgba($color_b, 0.5)
+
+
+    .content
+        border: 1px solid white
+        border-top-left-radius: 15px
+        border-bottom-left-radius: 15px
+        width: 85%
+        height: 260px
+        text-align: right
+        position: relative
+        color: $color_d
+        display: flex
+        align-items: center
+        justify-content: flex-end
+
+        h1
+            transform: scaleX(1)
+            font-size: 60px
+            line-height: 100px
+            margin: 0
+            padding: 0
+            letter-spacing: 0.8rem
+            text-shadow: -8px 0 10px $color_b
+
+            .hide-br
+                display: none
+
+        img
+            position: absolute
+            height: 100%
+            width: auto
+            left: 0
+            top: 0
+            z-index: -1
+
+    @media screen and (max-width: 1200px)
+        justify-content: center
+
+    @media screen and (max-width: 1070px)
+        .content
+            h1
+                letter-spacing: 0
+                margin-right: 20px
+    
+    @media screen and (max-width: 712px)
+        .content
+            height: 350px
+    
+    @media screen and (max-width: 510px)
+        .content
+            h1
+                font-size: 35px
+                line-height: 60px

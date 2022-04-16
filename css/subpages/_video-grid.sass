@@ -1,0 +1,133 @@
+.video-grid
+
+    p, h1, h2, h3, a
+        transform: scaleX(1)
+
+    .title-wrapper
+
+        h2
+            font-size: 90px
+            padding: 50px 0
+
+    &.ungeubte
+        .title-wrapper
+            background-color: rgba($color_b, 0.5)
+            background-image: url("../imgs/illustration.png")
+            background-size: auto 90%
+            background-repeat: no-repeat
+            background-position: center
+
+            h2
+                font-size: 60px
+                letter-spacing: 0.3rem
+                line-height: 80px
+                margin: 0
+                padding: 30px 15px
+                color: $color_d
+            
+    > .grid-bg.decorator
+        width: 100%
+        height: 70px
+        margin-top: 30px
+        margin-bottom: 20px
+
+    &.spiel
+        > .grid-bg.decorator
+            margin-top: 30px
+            margin-bottom: 10px
+
+        .title-wrapper
+            background-color: $color_b
+
+            h2
+                color: $color_d
+
+    .buchen
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        .left, .right
+            width: 45%
+
+        h3
+            font-size: 80px
+
+        .wrapper-video
+            display: flex
+            align-items: center
+            justify-content: center
+
+            iframe
+                width: 80%
+                height: calc(1100px * 0.45 * 0.8 * (9/16))
+    
+    @media screen and (max-width: 1100px)
+        .buchen
+            flex-direction: column
+
+            .left, .right
+                width: 80%
+
+            .wrapper-video
+                iframe
+                    width: 100%
+                    height: calc(100vw * 0.9 * (9/16))
+
+        &.ungeubte
+            .title-wrapper
+                h2
+                    letter-spacing: 0
+
+
+    @media screen and (max-width: 900px)
+        &.ungeubte
+            .title-wrapper
+                h2
+                    font-size: 40px
+                    line-height: 60px 
+
+    
+    @media screen and (max-width: 850px)
+        .title-wrapper
+            h2
+                letter-spacing: 0
+
+        .buchen
+            flex-direction: column
+
+            .left, .right
+                width: 100%
+
+            h3
+                letter-spacing: 0
+
+    @media screen and (max-width: 550px)
+        .title-wrapper
+            h2
+                font-size: 70px
+
+        .buchen
+
+            h3
+                font-size: 60px
+
+            .wrapper-video
+                video
+                    width: 100%
+        
+        &.ungeubte
+            .title-wrapper
+                h2
+                    font-size: 30px
+                    line-height: 40px 
+
+    @media screen and (max-width: 450px)
+        .title-wrapper
+            h2
+                font-size: 50px
+
+        .buchen
+
+            h3
+                font-size: 40px

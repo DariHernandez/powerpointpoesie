@@ -1,0 +1,32 @@
+.impressum
+    
+    margin-top: 80px
+    margin-bottom: 100px
+
+    p
+        font-size: 22px
+        line-height: 50px
+
+    .triangle-wrapper
+        width: 100%
+        height: 80px
+        display: flex
+        align-items: flex-start
+        justify-content: flex-end
+        overflow: hidden
+
+        .triangle
+            background-color: $color_b
+            width: 70%
+            height: 152%
+            margin-top: -50px
+            margin-right: -403px
+            transform: rotateZ(15deg)
+
+    @media screen and (max-width: 1200px)
+        .triangle-wrapper
+            display: none
+
+    @media screen and (max-width: 750px)
+        p
+            letter-spacing: 0
