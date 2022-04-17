@@ -43,7 +43,7 @@
                 font-size: 50px
                 letter-spacing: 8px
                 color: $color_d
-                line-height: 80px
+                line-height: 100px
 
     .buchen
         display: flex
@@ -78,14 +78,19 @@
                     width: 100%
                     height: calc(100vw * 0.9 * (9/16))
 
-        &.ungeubte
+        &.ungeubte, &.spiel
             .title-wrapper
                 h2
                     letter-spacing: 0
 
+    @media screen and (max-width: 1000px)
+        .title-wrapper
+            h2
+                letter-spacing: 0
+
 
     @media screen and (max-width: 900px)
-        &.ungeubte
+        &.ungeubte, &.spiel
             .title-wrapper
                 h2
                     font-size: 40px
@@ -106,10 +111,11 @@
             h3
                 letter-spacing: 0
 
-    @media screen and (max-width: 550px)
+    @media screen and (max-width: 600px)
         .title-wrapper
             h2
                 font-size: 70px
+                line-height: 100px
 
         .buchen
 
@@ -120,18 +126,19 @@
                 video
                     width: 100%
         
-        &.ungeubte
+        &.ungeubte, &.spiel
             .title-wrapper
                 h2
                     font-size: 30px
                     line-height: 40px 
 
-    @media screen and (max-width: 450px)
+    @media screen and (max-width: 400px)
         .title-wrapper
             h2
-                font-size: 50px
+                font-size: 45px
+                line-height: 60px
 
         .buchen
 
             h3
-                font-size: 40px
+                font-size: 35px
