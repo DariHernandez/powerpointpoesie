@@ -47,15 +47,6 @@ a:hover {
   color: #f9d79e;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-  transform: scaleX(1.2);
-}
-@media screen and (max-width: 1300px) {
-  p, h1, h2, h3, h4, h5, h6 {
-    transform: scaleX(1);
-  }
-}
-
 .regular-width {
   width: 1100px;
   margin: 0 auto;
@@ -112,6 +103,13 @@ p, h1, h2, h3, h4, h5, h6 {
 .grid-bg.dark {
   background-image: url("../imgs/grid-dark.png");
   background-size: 100%;
+}
+.grid-bg.grey {
+  background-image: url("../imgs/grid-grey.png");
+}
+.grid-bg.text {
+  background-size: 15%;
+  opacity: 0.5;
 }
 
 .hero {
@@ -408,6 +406,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .banner .hero h2 {
   letter-spacing: 0.8rem;
   margin-top: 0;
+  font-weight: 900;
 }
 .banner p {
   font-size: 30px;
@@ -415,7 +414,7 @@ p, h1, h2, h3, h4, h5, h6 {
   display: inline-block;
 }
 .banner p.small {
-  font-size: 12px;
+  font-size: 15px;
   opacity: 0.8;
   line-height: 30px;
   letter-spacing: 0rem;
@@ -477,6 +476,10 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-top: 20px;
   transition-duration: 0.5s;
   width: 25%;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 .contact .wrapper-button-decorator button p {
   transform: scaleX(1);
@@ -626,7 +629,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .impressum {
   margin-top: 80px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .impressum p {
   font-size: 22px;
@@ -778,7 +781,33 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 60px;
   width: 80%;
 }
+.das-stuck .text-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid #f9d79e;
+  border-right: none;
+  border-left: none;
+  position: relative;
+}
+.das-stuck .text-wrapper p:first-child {
+  margin-top: 0;
+}
+.das-stuck .text-wrapper p:last-child {
+  margin-bottom: 0;
+}
+.das-stuck .text-wrapper .bg-img {
+  position: absolute;
+  width: auto;
+  height: 80%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.2;
+}
 .das-stuck p {
+  width: 100%;
   transform: scaleX(1);
   letter-spacing: 0.1rem;
   font-size: 40px;
@@ -916,7 +945,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .contact-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .contact-cards .card {
   transform: scaleX(1);
