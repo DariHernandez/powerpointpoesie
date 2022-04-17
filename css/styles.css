@@ -693,12 +693,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .sub-hero .content h1 {
   transform: scaleX(1);
-  font-size: 60px;
+  font-size: 59px;
+  letter-spacing: 0.82rem;
   line-height: 100px;
   margin: 0;
   padding: 0;
-  letter-spacing: 0.8rem;
-  text-shadow: -8px 0 10px #ba2f36;
+  text-shadow: -11px 3px 12px #ba2f36;
 }
 .sub-hero .content h1 .hide-br {
   display: none;
@@ -744,8 +744,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: -70px;
 }
 .eine .wrapper-text h2 {
-  letter-spacing: 0.8rem;
-  font-size: 55px;
+  font-size: 50px;
+  letter-spacing: 0.5rem;
   margin: 0;
   padding: 0;
   line-height: 90px;
@@ -769,7 +769,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .das-stuck h2 {
-  font-size: 100px;
+  font-size: 91px;
+  letter-spacing: 1.55rem;
   margin-top: 80px;
   margin-bottom: 60px;
 }
@@ -778,7 +779,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 80%;
 }
 .das-stuck .text-wrapper {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -787,8 +788,13 @@ h1, h2, h3, h4, h5, h6 {
   border-left: none;
   position: relative;
 }
-.das-stuck .text-wrapper p:first-child {
-  margin-top: 0;
+.das-stuck .text-wrapper p {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  transform: scaleX(1);
+  letter-spacing: 0.12rem;
+  font-size: 38px;
 }
 .das-stuck .text-wrapper p:last-child {
   margin-bottom: 0;
@@ -802,15 +808,6 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateX(-50%);
   opacity: 0.2;
 }
-.das-stuck p {
-  width: 100%;
-  transform: scaleX(1);
-  letter-spacing: 0.1rem;
-  font-size: 40px;
-}
-.das-stuck p.last {
-  margin-bottom: 20px;
-}
 @media screen and (max-width: 600px) {
   .das-stuck h2 {
     font-size: 70px;
@@ -821,12 +818,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.video-grid p, .video-grid h1, .video-grid h2, .video-grid h3, .video-grid a {
-  transform: scaleX(1);
-}
 .video-grid .title-wrapper h2 {
-  font-size: 90px;
-  padding: 50px 0;
+  font-size: 85px;
+  padding: 30px 0;
+  letter-spacing: 1.6rem;
+  line-height: 150px;
 }
 .video-grid.ungeubte .title-wrapper {
   background-color: rgba(186, 47, 54, 0.5);
@@ -834,10 +830,11 @@ h1, h2, h3, h4, h5, h6 {
   background-size: auto 90%;
   background-repeat: no-repeat;
   background-position: center;
+  margin-top: 100px;
 }
 .video-grid.ungeubte .title-wrapper h2 {
-  font-size: 60px;
-  letter-spacing: 0.3rem;
+  font-size: 50px;
+  letter-spacing: 0.5rem;
   line-height: 80px;
   margin: 0;
   padding: 30px 15px;
@@ -857,7 +854,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #ba2f36;
 }
 .video-grid.spiel .title-wrapper h2 {
+  font-size: 50px;
+  letter-spacing: 8px;
   color: #fff4d2;
+  line-height: 80px;
 }
 .video-grid .buchen {
   display: flex;
@@ -868,7 +868,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 45%;
 }
 .video-grid .buchen h3 {
-  font-size: 80px;
+  font-size: 97px;
+  letter-spacing: 1.6rem;
 }
 .video-grid .buchen .wrapper-video {
   display: flex;
@@ -938,72 +939,78 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.contact-cards {
+.sub-contact {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 30px;
 }
-.contact-cards .card {
+.sub-contact .card {
   transform: scaleX(1);
   letter-spacing: 0;
   font-size: 50px;
   display: inline-block;
 }
-.contact-cards .card:nth-child(2) {
+.sub-contact .card a {
+  font-size: 47px;
+  letter-spacing: 0.2rem;
+}
+.sub-contact .card:nth-child(2) {
   text-align: left;
 }
-.contact-cards .card:nth-child(3) {
+.sub-contact .card:nth-child(3) {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-.contact-cards .card:nth-child(3) a {
+.sub-contact .card:nth-child(3) a {
   transition: 0.5s;
   border: 2px solid #ba2f36;
   width: auto;
-  font-size: 25px;
-  padding: 20px;
-  padding-left: 30px;
+  padding: 15px;
+  padding-left: 20px;
   border-bottom-left-radius: 100px;
+  font-size: 18px;
+  letter-spacing: 0.15rem;
+  font-weight: 900;
 }
-.contact-cards .card:nth-child(3) a:hover {
+.sub-contact .card:nth-child(3) a:hover {
   background-color: #ba2f36;
   color: #fff4d2;
 }
 @media screen and (max-width: 1000px) {
-  .contact-cards .card:nth-child(1) {
+  .sub-contact .card:nth-child(1) {
     text-align: left;
   }
-  .contact-cards .card:nth-child(2) {
+  .sub-contact .card:nth-child(2) {
     text-align: center;
   }
-  .contact-cards .card:nth-child(3) {
+  .sub-contact .card:nth-child(3) {
     display: flex;
     align-items: center;
     justify-content: flex-end;
   }
 }
 @media screen and (max-width: 800px) {
-  .contact-cards .card a {
+  .sub-contact .card a {
     font-size: 40px;
   }
 }
 @media screen and (max-width: 650px) {
-  .contact-cards {
+  .sub-contact {
     grid-template-columns: 1fr;
   }
-  .contact-cards .card {
+  .sub-contact .card {
     margin-bottom: 20px;
     line-height: auto;
   }
-  .contact-cards .card:nth-child(1), .contact-cards .card:nth-child(2) {
+  .sub-contact .card:nth-child(1), .sub-contact .card:nth-child(2) {
     text-align: center;
   }
-  .contact-cards .card:nth-child(3) {
+  .sub-contact .card:nth-child(3) {
     margin-top: 10px;
     justify-content: center;
   }
-  .contact-cards .card:nth-child(3) a {
+  .sub-contact .card:nth-child(3) a {
     border-bottom-left-radius: 0;
     padding-left: none;
     padding: 20px;
