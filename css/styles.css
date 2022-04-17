@@ -232,20 +232,6 @@ h1, h2, h3, h4, h5, h6 {
   .texten h2, .texten p {
     letter-spacing: 0;
   }
-  .texten h2 {
-    font-size: 50px;
-  }
-  .texten p {
-    font-size: 40px;
-  }
-}
-@media screen and (max-width: 350px) {
-  .texten h2 {
-    font-size: 40px;
-  }
-  .texten p {
-    font-size: 30px;
-  }
 }
 
 .orchester-bildern .dots {
@@ -334,7 +320,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.45rem;
   font-style: italic;
   text-align: right;
-  width: 1100px;
+  width: 100%;
   transform: scaleX(1);
   margin: 80px 0;
 }
@@ -367,20 +353,20 @@ h1, h2, h3, h4, h5, h6 {
   width: 200px;
   height: 80px;
 }
-@media screen and (max-width: 1250px) {
-  .stucke h2, .stucke p.subtitle {
-    width: 100%;
-    letter-spacing: 0;
+@media screen and (max-width: 1000px) {
+  .stucke h2 {
+    letter-spacing: 2rem;
   }
-  .stucke .cards .card {
+  .stucke .cards a.card {
     letter-spacing: 0;
   }
 }
 @media screen and (max-width: 750px) {
   .stucke p.subtitle {
     text-align: center;
+    letter-spacing: 0;
   }
-  .stucke .cards .card {
+  .stucke .cards a.card {
     margin-bottom: 50px;
     width: 80%;
   }
@@ -395,20 +381,17 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   .stucke h2 {
-    font-size: 120px;
-  }
-  .stucke p.subtitle {
-    font-size: 30px;
+    letter-spacing: 0;
   }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 450px) {
   .stucke h2 {
-    font-size: 110px;
+    font-size: 100px;
   }
   .stucke p.subtitle {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 
@@ -449,6 +432,14 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 900px) {
   .banner .hero h2, .banner .hero p {
     letter-spacing: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .banner .hero p {
+    font-size: 25px;
+  }
+  .banner .hero h2 {
+    font-size: 30px;
   }
 }
 
@@ -599,7 +590,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 @media screen and (max-width: 1200px) {
-  .contact .cards a, .contact .cards p {
+  .contact .cards .card a, .contact .cards .card p {
     letter-spacing: 0;
   }
   .contact .wrapper-button-decorator {
@@ -654,14 +645,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .impressum {
   margin-top: 80px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 .impressum p {
   font-size: 22px;
   line-height: 50px;
   letter-spacing: 0.62rem;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 500px) {
   .impressum p {
     letter-spacing: 0;
   }

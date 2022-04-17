@@ -11,7 +11,7 @@
         letter-spacing: .45rem
         font-style: italic
         text-align: right
-        width: 1100px
+        width: 100%
         transform: scaleX(1)
         margin: 80px 0
 
@@ -47,22 +47,26 @@
                 width: 200px
                 height: 80px
 
-    @media screen and (max-width: 1250px)
-        h2, p.subtitle
-            width: 100%
-            letter-spacing: 0
+    @media screen and (max-width: 1000px)
+        h2
+            letter-spacing: 2rem
+
+        // h2, p.subtitle
+        //     width: 100%
+        //     letter-spacing: 0
 
         .cards
-            .card
+            a.card
                 letter-spacing: 0
 
     @media screen and (max-width: 750px)
         p.subtitle
             text-align: center
+            letter-spacing: 0
 
         .cards
             
-            .card
+            a.card
                 margin-bottom: 50px
                 width: 80%
 
@@ -76,17 +80,28 @@
             .wrapper-dots
                 display: none
 
-    @media screen and (max-width: 500px)
+    @media screen and (max-width: 650px)
         h2
-            font-size: 120px
+            letter-spacing: 0
+
+    @media screen and (max-width: 450px)
+        h2
+            font-size: 100px
 
         p.subtitle
-            font-size: 30px
+            font-size: 25px
 
-    @media screen and (max-width: 380px)
-        h2
-            font-size: 110px
+    // @media screen and (max-width: 500px)
+    //     h2
+    //         font-size: 120px
 
-        p.subtitle
-            font-size: 20px
+    //     p.subtitle
+    //         font-size: 30px
+
+    // @media screen and (max-width: 380px)
+    //     h2
+    //         font-size: 110px
+
+    //     p.subtitle
+    //         font-size: 20px
             
