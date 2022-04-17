@@ -13,18 +13,20 @@
             align-items: center
             justify-content: center
 
-            a, p
-                font-size: 35px 
-                transform: scaleX(1)
+            a
+                font-size: 41px
+                letter-spacing: .6rem 
                 text-align: center
+
+            p
+                font-size: 49px
+                font-weight: bold
+                letter-spacing: 1.35rem
 
             &.name
                 border-right: none
                 border-bottom: none
 
-                p
-                    font-size: 45px
-                    font-weight: bold
 
             &.phone
                 border-top: none
@@ -46,22 +48,20 @@
             display: flex
             align-items: center
             justify-content: space-evenly
-            padding: 10px
+            padding: 25px 10px
             margin-top: 20px
             transition-duration: 0.5s
             width: 25%
             font-family: "Big Shoulders Display", cursive
-            font-size: 26px
-            font-weight: 400
-            letter-spacing: 1px
 
-            
             p
-                transform: scaleX(1)
-                letter-spacing: 0
+
+                font-size: 26px
+                letter-spacing: 0.05rem
                 color: $color_a
-                font-size: 20px
                 transition-duration: 0.5s
+                padding: 0
+                margin: 0
 
             svg
                 fill: $color_a
@@ -106,8 +106,6 @@
         height: auto
         display: block
         width: calc(50% - 20px)
-        text-align: left
-        font-size: 25px
         background-color: $color_b
         color: $color_c
         padding: 30px 15px
@@ -135,10 +133,12 @@
 
             li
                 list-style: none
-                letter-spacing: 0
                 line-height: 40px
                 margin: 0
                 padding: 0
+                text-align: left
+                font-size: 24px
+                letter-spacing: 0
 
                 &.dark
                     color: $color_a

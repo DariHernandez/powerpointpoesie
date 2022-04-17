@@ -47,6 +47,10 @@ a:hover {
   color: #f9d79e;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+}
+
 .regular-width {
   width: 1100px;
   margin: 0 auto;
@@ -107,9 +111,11 @@ a:hover {
 .grid-bg.grey {
   background-image: url("../imgs/grid-grey.png");
 }
+.grid-bg.light {
+  background-image: url("../imgs/grid-light.png");
+}
 .grid-bg.text {
   background-size: 15%;
-  opacity: 0.5;
 }
 
 .hero {
@@ -152,12 +158,15 @@ a:hover {
   display: inline-block;
 }
 .hero .wrapper-content h1 {
-  font-size: 50px;
+  font-size: 55px;
   margin-bottom: 0px;
+  letter-spacing: 1.1rem;
 }
 .hero .wrapper-content h2 {
+  font-size: 49px;
   color: #ba2f36;
-  font-size: 40px;
+  letter-spacing: 15px;
+  letter-spacing: 1rem;
 }
 .hero .wrapper-content .text-box {
   background-color: #ba2f36;
@@ -201,12 +210,15 @@ a:hover {
   height: 60px;
 }
 .texten h2 {
-  font-size: 70px;
   margin-top: 50px;
+  font-size: 66px;
+  letter-spacing: 27px;
 }
 .texten p {
-  font-size: 60px;
-  margin-bottom: 30px;
+  font-size: 49px;
+  letter-spacing: 1.2rem;
+  margin-bottom: 0px;
+  line-height: 80px;
 }
 @media screen and (max-width: 550px) {
   .texten h2 {
@@ -247,12 +259,22 @@ a:hover {
   margin-top: 40px;
 }
 .orchester-bildern .cards h2 {
-  font-size: 60px;
   margin-top: 60px;
+  font-size: 50px;
+  letter-spacing: 1.7rem;
+  margin-bottom: 0;
 }
 .orchester-bildern .cards p {
-  font-size: 40px;
+  font-size: 33px;
+  letter-spacing: 27px;
+  font-weight: 900;
+  line-height: 70px;
+  margin-top: 10px;
   margin-bottom: 100px;
+  letter-spacing: 1.7rem;
+}
+.orchester-bildern .cards p.und {
+  letter-spacing: 8px;
 }
 .orchester-bildern .cards .right, .orchester-bildern .cards .left {
   width: calc((100% - 80px) / 2);
@@ -302,22 +324,24 @@ a:hover {
 }
 
 .stucke h2 {
-  font-size: 130px;
-  letter-spacing: 3rem;
+  font-size: 140px;
+  letter-spacing: 4.8rem;
   margin-bottom: 0;
 }
 .stucke p.subtitle {
   color: #f9d79e;
-  font-size: 40px;
-  letter-spacing: 0;
+  font-size: 34px;
+  letter-spacing: 0.45rem;
   font-style: italic;
   text-align: right;
   width: 1100px;
   transform: scaleX(1);
   margin: 80px 0;
 }
-.stucke .cards .card {
-  font-size: 35px;
+.stucke .cards a.card {
+  font-size: 41px;
+  letter-spacing: 0.6rem;
+  font-weight: 400;
   width: 40%;
   border: 2px solid #f9d79e;
   border-right: none;
@@ -330,7 +354,7 @@ a:hover {
   background: linear-gradient(10deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 26%, rgba(186, 47, 54, 0.25) 28%, rgba(186, 47, 54, 0) 60%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr=$color_b,GradientType=1);
 }
-.stucke .cards .card.bottom {
+.stucke .cards a.card.bottom {
   display: block;
   margin: 0 auto;
 }
@@ -404,20 +428,22 @@ a:hover {
   transform: scaleX(1);
 }
 .banner .hero h2 {
-  letter-spacing: 0.8rem;
   margin-top: 0;
-  font-weight: 900;
+  font-size: 49px;
+  letter-spacing: 0.62rem;
+}
+.banner .hero p {
+  font-size: 30px;
+  letter-spacing: 0.65rem;
 }
 .banner p {
-  font-size: 30px;
-  letter-spacing: 0.5rem;
   display: inline-block;
 }
 .banner p.small {
   font-size: 15px;
+  letter-spacing: 0.1rem;
   opacity: 0.8;
   line-height: 30px;
-  letter-spacing: 0rem;
   word-spacing: 0.8rem;
 }
 @media screen and (max-width: 900px) {
@@ -439,18 +465,19 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
-.contact .cards .card a, .contact .cards .card p {
-  font-size: 35px;
-  transform: scaleX(1);
+.contact .cards .card a {
+  font-size: 41px;
+  letter-spacing: 0.6rem;
   text-align: center;
+}
+.contact .cards .card p {
+  font-size: 49px;
+  font-weight: bold;
+  letter-spacing: 1.35rem;
 }
 .contact .cards .card.name {
   border-right: none;
   border-bottom: none;
-}
-.contact .cards .card.name p {
-  font-size: 45px;
-  font-weight: bold;
 }
 .contact .cards .card.phone {
   border-top: none;
@@ -472,21 +499,19 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 10px;
+  padding: 25px 10px;
   margin-top: 20px;
   transition-duration: 0.5s;
   width: 25%;
   font-family: "Big Shoulders Display", cursive;
-  font-size: 26px;
-  font-weight: 400;
-  letter-spacing: 1px;
 }
 .contact .wrapper-button-decorator button p {
-  transform: scaleX(1);
-  letter-spacing: 0;
+  font-size: 26px;
+  letter-spacing: 0.05rem;
   color: #7a1111;
-  font-size: 20px;
   transition-duration: 0.5s;
+  padding: 0;
+  margin: 0;
 }
 .contact .wrapper-button-decorator button svg {
   fill: #7a1111;
@@ -530,8 +555,6 @@ a:hover {
   height: auto;
   display: block;
   width: calc(50% - 20px);
-  text-align: left;
-  font-size: 25px;
   background-color: #ba2f36;
   color: #f9d79e;
   padding: 30px 15px;
@@ -559,10 +582,12 @@ a:hover {
 }
 .contact .wrapper-menu ul li {
   list-style: none;
-  letter-spacing: 0;
   line-height: 40px;
   margin: 0;
   padding: 0;
+  text-align: left;
+  font-size: 24px;
+  letter-spacing: 0;
 }
 .contact .wrapper-menu ul li.dark {
   color: #7a1111;
@@ -634,27 +659,7 @@ a:hover {
 .impressum p {
   font-size: 22px;
   line-height: 50px;
-}
-.impressum .triangle-wrapper {
-  width: 100%;
-  height: 80px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  overflow: hidden;
-}
-.impressum .triangle-wrapper .triangle {
-  background-color: #ba2f36;
-  width: 70%;
-  height: 152%;
-  margin-top: -50px;
-  margin-right: -403px;
-  transform: rotateZ(15deg);
-}
-@media screen and (max-width: 1200px) {
-  .impressum .triangle-wrapper {
-    display: none;
-  }
+  letter-spacing: 0.62rem;
 }
 @media screen and (max-width: 750px) {
   .impressum p {
