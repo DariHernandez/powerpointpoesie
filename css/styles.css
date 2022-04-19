@@ -117,6 +117,9 @@ h1, h2, h3, h4, h5, h6 {
 .grid-bg.text {
   background-size: 15%;
 }
+.grid-bg p, .grid-bg h2, .grid-bg h3, .grid-bg h4 {
+  text-shadow: rgba(0, 0, 0, 0.25) 1px 1px 1px;
+}
 
 .hero {
   height: 350px;
@@ -694,7 +697,7 @@ h1, h2, h3, h4, h5, h6 {
 .sub-hero .content h1 {
   transform: scaleX(1);
   font-size: 59px;
-  letter-spacing: 0.82rem;
+  letter-spacing: 0.9rem;
   line-height: 100px;
   margin: 0;
   padding: 0;
