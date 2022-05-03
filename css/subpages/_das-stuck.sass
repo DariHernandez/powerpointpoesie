@@ -31,6 +31,10 @@
             transform: scaleX(1)
             letter-spacing: 0.12rem
             font-size: 38px
+            line-height: 57px
+
+            &.no-shadow
+                text-shadow: none !important
         
             // &:first-child
             //     margin-top: 0
@@ -48,6 +52,12 @@
             opacity: 0.2
 
     @media screen and (max-width: 1000px)
+
+        .text-wrapper
+            width: 100%
+            p
+                letter-spacing: 0
+                
         &.small-width
             .text-wrapper
                 width: 90%
